@@ -1,0 +1,250 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    background:black;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 50px;
+    color:white;
+}
+
+header .logo span{
+    color:greenyellow;
+}
+
+header .navbar a{
+    font-size: 1rem;
+    margin-left: 2rem;
+    color:white;
+}
+
+header .navbar a:hover{
+    color:gold;
+	cursor: pointer;
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color:var(--purple);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content {
+	text-align: center;
+	font-size: 1rem;
+    color:#333;
+    text-transform: uppercase;
+	background-image: url(bg.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 10rem 0;
+}
+.content h1{
+	margin-left: 100px;
+	font-size: 3rem;
+    color:#333;
+    text-transform: uppercase;
+}
+.content h1 span{
+	color: greenyellow;
+}
+.content h3{
+	margin-left: 100px;
+	font-size: 1rem;
+    color:#333;
+    text-transform: uppercase;
+}
+.content h4{
+	margin-left: 100px;
+	font-size: 1rem;
+    color:#333;
+    text-transform: uppercase;
+}
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: rgb(165, 119, 233);
+	font-size: 65px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 21px;
+	margin-bottom: 45px;
+}
+
+.profile{
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #191919;
+	border-radius: 20px;
+	margin: 25px;
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+	color: aqua;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #613de3;
+
+}
+h5{
+	color: white;
+	text-align: center;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+.card .button{
+	background-color:#7947e4;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #5033fa;
+	cursor: pointer;
+}
+.contact-me{
+	width: 100%;
+	height: 290px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.contact-me p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contact-me .button-two{
+	background-color:#8557f1;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.contact-me .button-two:hover{
+	background-color: transparent;
+	border: 2px solid #527fea;
+	cursor: pointer;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: rgb(18, 17, 17);
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
